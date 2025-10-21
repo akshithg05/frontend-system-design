@@ -5,12 +5,14 @@ export const typeDefs = `#graphql
     type Author{
         id: ID!
         name: String!
+        books: [Book]
     }
 
     type Book{
         id: ID!
         title: String!
         publishedYear: Int
+        author: Author
     }
 
     # All the methods to get the data
@@ -18,6 +20,10 @@ export const typeDefs = `#graphql
     type Query {
         authors: [Author]  # Square bracket says give me list of authors
         books: [Book]
+    }
+
+    type Mutation{
+        addBook(title: String!, publishedYear: Int,authorId: ID!): Book!
     }
 
     # All the methods to create/ update the data
