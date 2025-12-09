@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clickjacking IFrame</title>
+  </head>
+  <body>
+    <h1>Child Iframe</h1>
+    <p>Iframe: Click the button below to see a simple clickjacking demonstration.</p>
+
+    <button style="background-color: red" id="payBtn">Pay Now</button>
+
+    <script>
+      document.getElementById("payBtn").addEventListener("click", () => {
+        window.top.location.href = "http://localhost:5010/example1";
+      });
+    </script>
+  </body>
+</html>

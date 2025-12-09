@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Page for CSP demo</h2>
+    <script src="https://dev-tinder-backend-r1ek.onrender.com/feed"></script>
+    <script nonce="random">
+      console.log("My trusted script");
+    </script>
+
+    <script>
+      console.log("My Untrusted script");
+    </script>
+  </body>
+</html>
