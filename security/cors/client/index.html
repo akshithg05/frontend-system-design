@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CORS</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>Cross origin resource sharing</h1>
+    <div id="result"></div>
+
+    <button onclick="fetchData()">Fetch data</button>
+    <script>
+      async function fetchData() {
+        try {
+          const resp = await fetch("http://localhost:3000/list");
+          const data = await resp.json();
+          document.getElementById("result").innerText = data.message;
+        } catch (err) {
+          console.log("CORS error");
+        }
+      }
+    </script>
+  </body>
+</html>
