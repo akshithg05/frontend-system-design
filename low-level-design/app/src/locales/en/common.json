@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "login": "Login",
+    "about": "About us",
+    "team": "Team"
+  },
+  "header": {
+    "title": "Photos",
+    "changeTheme": "Change theme"
+  },
+  "languages": {
+    "english": "English",
+    "german": "German"
+  }
+}

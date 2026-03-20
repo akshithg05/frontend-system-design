@@ -8,7 +8,6 @@ import { createContext, useState } from "react";
 import Header from "./Header";
 
 export const ThemeContext = createContext();
-
 export default function App() {
   const [theme, setTheme] = useState("light");
   return (
