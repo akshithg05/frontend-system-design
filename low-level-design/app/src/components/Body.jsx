@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo, memo } from "react";
 import Card from "./Card";
 import ShimmerCard from "./ShimmerCard";
 
-export default function Body() {
+function Body() {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState(null);
 
@@ -25,6 +25,10 @@ export default function Body() {
 
   console.log("Data", data);
 
+  const cards = useMemo(() => {
+    return data?.map((image) => <Card image={image} key={image.id} />);
+  }, [data]);
+
   if (loading) {
     return (
       <div className="px-10 flex flex-wrap gap-4">
@@ -34,11 +38,7 @@ export default function Body() {
       </div>
     );
   }
-  return (
-    <div className="px-10 flex flex-wrap gap-4">
-      {data?.map((image) => {
-        return <Card image={image} key={image.id} />;
-      })}
-    </div>
-  );
+  return <div className="mt-5 px-10 flex flex-wrap gap-4">{cards}</div>;
 }
+
+export default memo(Body);
