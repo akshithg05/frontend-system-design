@@ -2,7 +2,8 @@
   "nav": {
     "login": "Anmelden",
     "about": "Über uns",
-    "team": "Team"
+    "team": "Team",
+    "accordion": "Akkordeon"
   },
   "header": {
     "title": "Fotos",

@@ -19,6 +19,7 @@ self.addEventListener("install", (e) => {
 self.addEventListener("activate", (e) => {
   // clean up useless cache.
   e.waitUntil(
+    // get ALL cache names stored in the browser
     caches.keys().then((keyList) => {
       return Promise.all(
         keyList.map((key) => {

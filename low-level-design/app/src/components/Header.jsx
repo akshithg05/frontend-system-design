@@ -37,6 +37,7 @@ export default function Header() {
           <a href="/login">{t("nav.login")}</a>
           <a href="/about">{t("nav.about")}</a>
           <a href="/team">{t("nav.team")}</a>
+          <a href="/accordion">{t("nav.accordion")}</a>
         </nav>
       </div>
       <div className="flex">

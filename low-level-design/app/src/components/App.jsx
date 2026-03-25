@@ -6,6 +6,7 @@ import Login from "./Login";
 import ProtectedRoute from "./ProtectedRoute";
 import { createContext, useState } from "react";
 import Header from "./Header";
+import Accordion from "./Accordion";
 
 export const ThemeContext = createContext();
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
               <Route path="/about" element={<AboutUs />}></Route>
             </Route>
             <Route path="/team" element={<Team />}></Route>
+            <Route path="/accordion" element={<Accordion />}></Route>
             <Route path="/login" element={<Login />}></Route>
           </Routes>
         </BrowserRouter>

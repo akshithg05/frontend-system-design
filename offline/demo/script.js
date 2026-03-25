@@ -3,6 +3,7 @@
 if (navigator.serviceWorker) {
   // Register service worker
   navigator.serviceWorker
+    // pass path of the sw file here
     .register("./sw.js", {
       scope: "./",
     })
@@ -13,5 +14,5 @@ if (navigator.serviceWorker) {
     .catch((err) => {
       console.log("There was an error registering service worker");
       console.log("ERROR: -", err);
-    }); // pass path of the sw file here
+    });
 }

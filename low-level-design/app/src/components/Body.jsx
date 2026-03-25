@@ -16,7 +16,7 @@ export default function Body() {
     try {
       setLoading(true);
       const resp = await fetch(
-        `https://picsum.photos/v2/list?page=${pageRef.current}&limit=20`,
+        `https://picsum.photos/v2/list?page=${pageRef.current}&limit=10`,
       );
       const json = await resp.json();
       pageRef.current = pageRef.current + 1;
