@@ -3,7 +3,8 @@
     "login": "Anmelden",
     "about": "Über uns",
     "team": "Team",
-    "accordion": "Akkordeon"
+    "accordion": "Akkordeon",
+    "nested_comments": "Verschachtelte Kommentare"
   },
   "header": {
     "title": "Fotos",

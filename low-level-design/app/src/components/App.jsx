@@ -7,6 +7,7 @@ import ProtectedRoute from "./ProtectedRoute";
 import { createContext, useState } from "react";
 import Header from "./Header";
 import Accordion from "./Accordion";
+import NestedComments from "./Comments/NestedComments";
 
 export const ThemeContext = createContext();
 export default function App() {
@@ -14,8 +15,8 @@ export default function App() {
   return (
     <div>
       <ThemeContext.Provider value={{ setTheme, theme }}>
-        <Header />
         <BrowserRouter>
+          <Header />
           <Routes>
             <Route path="/" element={<Body />}></Route>
             {/*We want to make the about us route a protected route*/}
@@ -25,6 +26,7 @@ export default function App() {
             <Route path="/team" element={<Team />}></Route>
             <Route path="/accordion" element={<Accordion />}></Route>
             <Route path="/login" element={<Login />}></Route>
+            <Route path="/nestedComments" element={<NestedComments />}></Route>
           </Routes>
         </BrowserRouter>
       </ThemeContext.Provider>

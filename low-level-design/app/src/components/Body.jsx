@@ -50,7 +50,7 @@ export default function Body() {
 
   return (
     <div className="mt-5 px-10 flex flex-wrap gap-4">
-      {cards}
+      {!loading && cards}
       {loading && shimmerArray.map((_, i) => <ShimmerCard key={i} />)}
     </div>
   );

@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { ThemeContext } from "./App";
 import { useTranslation } from "react-i18next";
 
@@ -21,23 +22,24 @@ export default function Header() {
 
   return (
     <header
-      className={`bg-${theme === "dark" ? "black" : "white"} flex flex-wrap justify-between`}
+      className={`${theme === "dark" ? "bg-black" : "bg-white"} flex flex-wrap justify-between`}
     >
       <div className="flex">
-        <a href="/">
+        <Link to="/">
           <h1
-            className={`px-10 py-5 text-2xl font-bold text-${theme === "dark" ? "white" : "black"}`}
+            className={`px-10 py-5 text-2xl font-bold ${theme === "dark" ? "text-white" : "text-black"}`}
           >
             {t("header.title")}
           </h1>
-        </a>
+        </Link>
         <nav
-          className={`py-6 text-${theme === "dark" ? "white" : "black"} flex flex-wrap gap-4`}
+          className={`py-6 ${theme === "dark" ? "text-white" : "text-black"} flex flex-wrap gap-4`}
         >
-          <a href="/login">{t("nav.login")}</a>
-          <a href="/about">{t("nav.about")}</a>
-          <a href="/team">{t("nav.team")}</a>
-          <a href="/accordion">{t("nav.accordion")}</a>
+          <Link to="/login">{t("nav.login")}</Link>
+          <Link to="/about">{t("nav.about")}</Link>
+          <Link to="/team">{t("nav.team")}</Link>
+          <Link to="/accordion">{t("nav.accordion")}</Link>
+          <Link to="/nestedComments">{t("nav.nested_comments")}</Link>
         </nav>
       </div>
       <div className="flex">

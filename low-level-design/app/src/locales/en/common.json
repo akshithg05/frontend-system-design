@@ -3,7 +3,8 @@
     "login": "Login",
     "about": "About us",
     "team": "Team",
-    "accordion": "Accordion"
+    "accordion": "Accordion",
+    "nested_comments": "Nested Comments"
   },
   "header": {
     "title": "Photos",
