@@ -8,6 +8,7 @@ import { createContext, useState } from "react";
 import Header from "./Header";
 import Accordion from "./Accordion";
 import NestedComments from "./Comments/NestedComments";
+import ImageSlider from "./ImageSlider";
 
 export const ThemeContext = createContext();
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
             <Route path="/accordion" element={<Accordion />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/nestedComments" element={<NestedComments />}></Route>
+            <Route path="/imageSlider" element={<ImageSlider />}></Route>
           </Routes>
         </BrowserRouter>
       </ThemeContext.Provider>

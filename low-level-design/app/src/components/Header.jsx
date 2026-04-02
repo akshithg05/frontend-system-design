@@ -40,6 +40,7 @@ export default function Header() {
           <Link to="/team">{t("nav.team")}</Link>
           <Link to="/accordion">{t("nav.accordion")}</Link>
           <Link to="/nestedComments">{t("nav.nested_comments")}</Link>
+          <Link to="/imageSlider">{t("nav.image_slider")}</Link>
         </nav>
       </div>
       <div className="flex">
