@@ -11,6 +11,7 @@ import NestedComments from "./Comments/NestedComments";
 import ImageSlider from "./ImageSlider";
 
 export const ThemeContext = createContext();
+
 export default function App() {
   const [theme, setTheme] = useState("light");
   return (
