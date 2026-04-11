@@ -41,6 +41,7 @@ export default function Header() {
           <Link to="/accordion">{t("nav.accordion")}</Link>
           <Link to="/nestedComments">{t("nav.nested_comments")}</Link>
           <Link to="/imageSlider">{t("nav.image_slider")}</Link>
+          <Link to="/pagination">{t("nav.pagination")}</Link>
         </nav>
       </div>
       <div className="flex">

@@ -9,6 +9,7 @@ import Header from "./Header";
 import Accordion from "./Accordion";
 import NestedComments from "./Comments/NestedComments";
 import ImageSlider from "./ImageSlider";
+import Pagination from "./Pagination";
 
 export const ThemeContext = createContext();
 
@@ -30,6 +31,7 @@ export default function App() {
             <Route path="/login" element={<Login />}></Route>
             <Route path="/nestedComments" element={<NestedComments />}></Route>
             <Route path="/imageSlider" element={<ImageSlider />}></Route>
+            <Route path="/pagination" element={<Pagination />}></Route>
           </Routes>
         </BrowserRouter>
       </ThemeContext.Provider>

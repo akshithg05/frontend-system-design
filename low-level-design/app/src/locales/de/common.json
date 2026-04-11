@@ -5,7 +5,8 @@
     "team": "Team",
     "accordion": "Akkordeon",
     "nested_comments": "Verschachtelte Kommentare",
-    "image_slider": "Bilderschieber"
+    "image_slider": "Bilderschieber",
+    "pagination": "Seitennavigation"
   },
   "header": {
     "title": "Fotos",
