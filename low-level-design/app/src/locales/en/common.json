@@ -6,7 +6,8 @@
     "accordion": "Accordion",
     "nested_comments": "Nested Comments",
     "image_slider": "Image Slider",
-    "pagination": "Pagination"
+    "pagination": "Pagination",
+    "live_chat": "Live Chat"
   },
   "header": {
     "title": "Photos",

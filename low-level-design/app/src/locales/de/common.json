@@ -6,7 +6,8 @@
     "accordion": "Akkordeon",
     "nested_comments": "Verschachtelte Kommentare",
     "image_slider": "Bilderschieber",
-    "pagination": "Seitennavigation"
+    "pagination": "Seitennavigation",
+    "live_chat": "Live-Chat"
   },
   "header": {
     "title": "Fotos",

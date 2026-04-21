@@ -42,6 +42,7 @@ export default function Header() {
           <Link to="/nestedComments">{t("nav.nested_comments")}</Link>
           <Link to="/imageSlider">{t("nav.image_slider")}</Link>
           <Link to="/pagination">{t("nav.pagination")}</Link>
+          <Link to="/livechat">{t("nav.live_chat")}</Link>
         </nav>
       </div>
       <div className="flex">
