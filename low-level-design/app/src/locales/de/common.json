@@ -7,7 +7,8 @@
     "nested_comments": "Verschachtelte Kommentare",
     "image_slider": "Bilderschieber",
     "pagination": "Seitennavigation",
-    "live_chat": "Live-Chat"
+    "live_chat": "Live-Chat",
+    "search_ui": "Suchoberfläche"
   },
   "header": {
     "title": "Fotos",

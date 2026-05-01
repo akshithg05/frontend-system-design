@@ -43,6 +43,7 @@ export default function Header() {
           <Link to="/imageSlider">{t("nav.image_slider")}</Link>
           <Link to="/pagination">{t("nav.pagination")}</Link>
           <Link to="/livechat">{t("nav.live_chat")}</Link>
+          <Link to="/searchUi">{t("nav.search_ui")}</Link>
         </nav>
       </div>
       <div className="flex">

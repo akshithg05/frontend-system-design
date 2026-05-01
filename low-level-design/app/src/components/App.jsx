@@ -11,6 +11,7 @@ import NestedComments from "./Comments/NestedComments";
 import ImageSlider from "./ImageSlider";
 import Pagination from "./Pagination";
 import LiveChat from "./LiveChat/LiveChat";
+import SearchUI from "./SearchBarUi/SearchUI";
 
 export const ThemeContext = createContext();
 
@@ -34,6 +35,7 @@ export default function App() {
             <Route path="/imageSlider" element={<ImageSlider />}></Route>
             <Route path="/pagination" element={<Pagination />}></Route>
             <Route path="/livechat" element={<LiveChat />}></Route>
+            <Route path="/searchUi" element={<SearchUI />}></Route>
           </Routes>
         </BrowserRouter>
       </ThemeContext.Provider>
